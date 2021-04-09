@@ -74,6 +74,11 @@ ul li a:hover {
     .fa-bars{
         color: #fff;
     }
+
+    ul li {
+        font-size: 0.9rem;
+        margin-bottom: 0.8rem;
+}
     
     /*Hide the the nav items on smaller screens*/
     .nav-bar .nav-links{
@@ -85,13 +90,22 @@ ul li a:hover {
             width: 100%;
             padding-left: 1.5rem;
             border-bottom: 1px solid #f0f0f0;
-    }   
+            margin-bottom: 5rem;
+    }  
+
+    ul li a:hover {
+        color: #f0f0f0;
+        background: #304353;
+    }
+    
+    
     
     /*displays the nav item with a click on the hamburger menu icon*/
     
     .nav-bar .menu_toggler:checked ~ .nav-links{
         display: flex;
         flex-direction: column;
+        align-items: center;
          
         }
     
