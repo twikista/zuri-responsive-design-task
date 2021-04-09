@@ -212,10 +212,17 @@ div.background {
    
 }
 
+div.hero-background-pos {
+    display: none;
+   
+}
+
+
 }
 /* End of hero section media query */
 
 
+/* snapshot section */
 
 div.snapshot-team {
     background: #f0f0f0;
@@ -295,6 +302,21 @@ div.box1 h5 {
     font-size: 1rem;
 }
 
+/*media query to make the snapshot section responsive for smaller screen sizes */ 
+
+@media (max-width:47.8rem) {
+
+    .snapshot-box-content{
+        flex-direction: column;
+    }
+   
+    
+}
+/* end of media query */
+
+
+/* Gallery section */
+
 div.gallery-section {
     background: #fff;
     padding: 4rem;
@@ -333,6 +355,8 @@ div.img img {
     width: 250px;
     height: 180px;
 }
+
+/* media query to adapt the snapshot section for smaller screen sizes */
 
 div.footer {
     background: #304353;
