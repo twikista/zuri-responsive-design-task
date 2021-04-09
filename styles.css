@@ -7,6 +7,8 @@
     font-family: 'Rubik', sans-serif;
 }
 
+/* Navigation bar */
+
 /* Hide the check box togger and hamburger menu icon
 in desktop and tablet view*/
 .menu_toggler, .menu-icon{
@@ -73,7 +75,7 @@ ul li a:hover {
         color: #fff;
     }
     
-    /*Hide the the nav items on mobile view*/
+    /*Hide the the nav items on smaller screens*/
     .nav-bar .nav-links{
             display: none;
             position: absolute;
@@ -94,6 +96,8 @@ ul li a:hover {
         }
     
     }
+
+    /* Hero Section */
 
 div.hero-section {
     background: #304353;
@@ -180,6 +184,38 @@ div.hero-background-pos {
     border-radius: 50%;
     box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
 }
+
+/* media query to adapt the hero section for smaller screen sizes */
+@media (max-width:47.8rem){
+    div.hero-section{
+        padding: 1rem;
+    }
+
+.hero-content-heading{
+    margin-top: 4rem;
+}
+
+div.hero-content-heading h3 {
+    font-size: 1.5rem;
+}
+
+div.hero-content-btn {
+    padding-bottom: 2rem;
+}
+
+div.hero-background {
+    padding: 2rem;
+}  
+
+div.background {
+    height: auto;
+   
+}
+
+}
+/* End of hero section media query */
+
+
 
 div.snapshot-team {
     background: #f0f0f0;
