@@ -306,6 +306,10 @@ div.box1 h5 {
 
 @media (max-width:47.8rem) {
 
+    div.snapshot-team h2{
+        font-size: 1rem;
+    }
+
     .snapshot-box-content{
         flex-direction: column;
     }
@@ -357,6 +361,17 @@ div.img img {
 }
 
 /* media query to adapt the snapshot section for smaller screen sizes */
+
+@media (max-width:47.8rem){
+    div.gallery-content h4{
+        font-size: 1rem;
+    }
+}
+
+/* end of media querry */
+
+
+/* footer section */
 
 div.footer {
     background: #304353;
@@ -456,3 +471,63 @@ div.footer h6 {
     font-size: 1rem;
     padding-top: 6rem;
 }
+
+/* media query to make footer section responsive */
+
+@media(max-width:47.8rem){
+
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+div.footer-content h4{
+        font-size: 1rem;
+    }
+
+    div.footer-input {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 3rem;
+    }
+    input[type="text"] {
+        margin-bottom: 0.9rem;
+        min-width: 6rem;
+        width: 90%; 
+        font-size: 0.7rem;
+        padding: 10px 5px;
+        border-radius: 50px;
+       
+    }
+    
+    input[type="email"] {
+        min-width: 6rem;
+        width: 90%; 
+        font-size: 0.7rem;
+        padding: 10px 5px;
+        border-radius: 50px;
+        
+    }
+    
+    textarea {
+        width: 90%;
+        border-radius: 10px;
+        min-width: 6rem;
+    }
+    
+    
+    div.footer-btn a {
+        border-radius: 5px;
+       
+    }
+    
+    div.footer h6 { 
+        font-size: 0.8rem;
+        
+    }
+
+}
+/* end of media query */
