@@ -11,7 +11,7 @@
 
 /* Hide the check box togger and hamburger menu icon
 in desktop and tablet view*/
-.menu_toggler, .menu-icon{
+.menu-icon{
     display:none
 }
 
@@ -24,12 +24,13 @@ in desktop and tablet view*/
     position: fixed; /* makes the nav bar to stay fixed*/
 }
 
-div.logo {
+.logo {
     font-size: 1.5rem;
     color: #bcc3c7;
 }
 
-ul.nav-links {
+
+.nav-links {
     display: flex;
     margin: 0;
     padding: 0;
@@ -62,7 +63,7 @@ ul li a:hover {
         z-index: 10;
     }
 
-    .nav-bar .logo{
+    .logo{
         font-size: 1rem;
     }
     
@@ -75,23 +76,27 @@ ul li a:hover {
         color: #fff;
     }
 
+    
+    /*Hide the the nav items on smaller screens*/
+    /* .nav-bar #nav-links{
+        display: none;
+        position: absolute;
+        top: 3rem;
+        left: 0;
+        background: #304353;
+        width: 100%;
+        padding-left: 1.5rem;
+         border-bottom: 1px solid #f0f0f0;
+        margin-bottom: 5rem; */
+
+    .nav-links{
+        display: none;
+    } 
+
     ul li {
         font-size: 0.9rem;
         margin-bottom: 0.8rem;
-}
-    
-    /*Hide the the nav items on smaller screens*/
-    .nav-bar .nav-links{
-            display: none;
-            position: absolute;
-            top: 3rem;
-            left: 0;
-            background: #304353;
-            width: 100%;
-            padding-left: 1.5rem;
-            border-bottom: 1px solid #f0f0f0;
-            margin-bottom: 5rem;
-    }  
+    }
 
     ul li a:hover {
         color: #f0f0f0;
@@ -102,27 +107,35 @@ ul li a:hover {
     
     /*displays the nav item with a click on the hamburger menu icon*/
     
-    .nav-bar .menu_toggler:checked ~ .nav-links{
+    .nav-links.active{
         display: flex;
         flex-direction: column;
         align-items: center;
+        position: absolute;
+        top: 3rem;
+        left: 0;
+        background: #304353;
+        width: 100%;
+        padding-left: 1.5rem;
+        border-bottom: 1px solid #f0f0f0;
+        margin-bottom: 5rem;
+    } 
+}
          
-        }
     
-    }
 
     /* Hero Section */
 
-div.hero-section {
+.hero-section {
     background: #304353;
     padding: 10rem;
 }
 
-div.hero-content-heading {
+.hero-content-heading {
     text-align: center;
 }
 
-div.hero-content-heading h3 {
+.hero-content-heading h3 {
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -130,7 +143,7 @@ div.hero-content-heading h3 {
     color: #bcc3c7;
 }
 
-div.hero-content-heading p {
+.hero-content-heading p {
     text-align: center;
     padding-top: 0.7rem;
     color: #88949B;
@@ -139,14 +152,14 @@ div.hero-content-heading p {
     font-weight: 300;
 }
 
-div.hero-content-btn {
+.hero-content-btn {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 2rem;
 }
 
-div.hero-content-btn a {
+.hero-content-btn a {
     background: #E44C65;
     text-decoration: none;
     color: #bcc3c7;
@@ -156,7 +169,7 @@ div.hero-content-btn a {
     letter-spacing: 2px;
 }
 
-div.hero-background {
+.hero-background {
     background: #f0f0f0;
     padding: 10rem;
     display: flex;
@@ -164,7 +177,7 @@ div.hero-background {
     align-items: center;
 }
 
-div.background {
+.background {
     background: #fff;
     box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
     padding: 15px 40px;
